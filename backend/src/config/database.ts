@@ -2,7 +2,7 @@
 import mongoose from 'mongoose';
 
 export const connectDatabase = async (): Promise<void> => {
-  const MONGO_URI = 'mongodb://127.0.0.1/usuarios_db';
+  const MONGO_URI = 'mongodb://atlas-sql-686e7d78fe6c9631cb119977-nxn8s.a.query.mongodb.net/sample_mflix?ssl=true&authSource=admin';
   try {
     await mongoose.connect(MONGO_URI);
     console.log('🔄 [Database]: Conexión exitosa a MongoDB');
