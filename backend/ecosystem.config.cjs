@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name: "backend-mean-employee",
-    script: "./index.ts",
+    script: "./dist/index.js",
     instances: "max",       // Modo Cluster: usa todos los núcleos de la CPU
     exec_mode: "cluster",
 

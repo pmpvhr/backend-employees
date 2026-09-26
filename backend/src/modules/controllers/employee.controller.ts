@@ -1,6 +1,6 @@
 
 import type { Request,Response } from 'express';
-import { type IEmployeeRepository } from '../repositories/employee.repository.interface.js'
+import { type IEmployeeRepository } from '../repositories/employee.repository.interface'
 
 export class EmployeeController {
   // Inyección de la abstracción (Inversión de Dependencias)
