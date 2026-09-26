@@ -26,10 +26,11 @@ module.exports = {
       user : 'ubuntu',
       host : '100.50.83.159',
       ref  : 'origin/main',
-      repo : 'git@github.com:TU_USUARIO/TU_REPOSITORIO.git',
+      repo : 'git@github.com:pmpvhr/backend-employees.git',
       path : '/var/www/employees/backend-employees',
       'post-deploy' : 'mkdir -p logs && npm install && pm2 reload ecosystem.config.js --env production && pm2 save',
-      ssh_options: "IdentityFile=~/.ssh/claves.pem" // Ruta a tu llave .pem local
+      ssh_options: "IdentityFile=C:\Users\USUARIO\.ssh\aws.pem" // Ruta a tu llave .pem local
+      
     }
   }
 };
