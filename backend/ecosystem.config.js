@@ -1,7 +1,7 @@
 module.exports = {
   apps : [{
     name: "backend-mean-employee",
-    script: "./index.js",
+    script: "./index.ts",
     instances: "max",       // Modo Cluster: usa todos los núcleos de la CPU
     exec_mode: "cluster",
 
@@ -14,8 +14,8 @@ module.exports = {
       DB_PASS: "password_seguro_de_base_de_datos"
     },
     // Logs y Monitoreo del Servidor
-    error_file: "/var/www/backend-mean-employee/logs/err.log",
-    out_file: "/var/www/backend-mean-employee/logs/out.log",
+    error_file: "/var/www/backend-employees/backend/logs/err.log",
+    out_file: "/var/www/backend-employees/backend/logs/out.log",
     log_date_format: "YYYY-MM-DD HH:mm:ss Z",
     merge_logs: true
   }],
